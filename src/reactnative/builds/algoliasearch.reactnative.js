@@ -39,10 +39,6 @@ algoliasearch.initPlaces = places(algoliasearch);
 
 // we expose into window no matter how we are used, this will allow
 // us to easily debug any website running algolia
-window.__algolia = {
-  debug: require('debug'),
-  algoliasearch: algoliasearch
-};
 
 var support = {
   timeout: 'timeout' in new XMLHttpRequest()
